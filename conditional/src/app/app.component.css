@@ -1,0 +1,20 @@
+
+body{
+    box-shadow: 8px 8px 8px;
+         background-color: coral;
+         border-color:bisque;
+         border-style: double;
+         border-width: 10px;
+         border-left: 100px;
+         border-right:100px
+ 
+ 
+         
+ }
+ .a
+ {
+     background-color: rgb(171, 56, 15);
+     border-color:bisque;
+     border-style: double;
+     border-width: 10px;
+ }

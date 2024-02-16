@@ -1,8 +1,16 @@
-<div>
-  <p>{{Count}}</p>
-  <div class="abc">
-  <button (click)="Inc()">+</button>
-  <button (click)="Dec()">-</button>
-  <button (click)="Reset()">Reset</button>
-</div>
+
+
+
+<div id="counter">
+  <p [className]="isEvenOdd?'even':'odd'">{{count}}</p>
+  <p>{{isEvenOdd ? "EVEN" :"ODD"}}</p>
+  <!-- <p [className]="isZero?'Zero':''"></p>
+  <p>{{isZero ? "" :"youshouldbedecremnetd"}}</p> -->
+  <div class="buttons">
+    <button (click)="incr()">+</button>
+    <button (click)="decr()">-</button>
+    <button  (click)="reset()">reset</button>
+  </div>
+
+
 </div>

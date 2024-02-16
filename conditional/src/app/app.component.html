@@ -1,0 +1,27 @@
+
+<div class="b">
+  <button (click)="login()">login</button></div>
+
+ 
+  
+<div *ngif="isLogin; else elsecase">
+<input type="number" [ngModel]="num"/><button (click)="click()">....</button>
+
+<div [ngSwitch]="num" class="a">
+ <h1 *ngSwitchCase="0"> Sunday</h1>
+ <h1 *ngSwitchCase="1"> Monday</h1>
+ <h1 *ngSwitchCase="2"> Tueday</h1>
+ <h1 *ngSwitchCase="3"> Wednesday</h1>
+ <h1 *ngSwitchCase="4"> Thursday</h1>
+ <h1 *ngSwitchCase="5"> Friday</h1>
+ <h1 *ngSwitchCase="6"> Saturday</h1>
+ <h1 *ngSwitchCaseDefault> you have to enter the (0-6)</h1>
+
+
+</div>
+
+</div>
+<ng-template #elsecase>
+  you are no logged in 
+</ng-template>
+

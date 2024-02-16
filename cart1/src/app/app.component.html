@@ -1,0 +1,16 @@
+<div>
+  <h1>Welcome to the cart</h1>
+  <button (click)="change()" >ChangeMode</button>
+</div>
+<div><app-header [counter]="c" ></app-header></div>
+<div id="products" [ngClass]="{dark:isDark}">
+<div *ngFor="let p of Recipe">
+  <img src="{{p.image}}" alt="recipe image" class="product"/>
+<h2>{{p.title | pipe1  }}</h2>
+<h2>{{p.price | currency:"INR"}}</h2>
+<p>{{p.description}}</p>
+<p>{{dt| date}}</p>
+<button (click)="add()">add to cart</button>
+
+</div>
+</div>

@@ -1,0 +1,24 @@
+#products
+{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}
+.product
+{
+text-align:center;
+ box-shadow: 5px 5px 5px black;
+ width:200px;
+ height:200px;
+ display:flex;
+margin:20px;
+ flex-direction: column;
+ align-items: center;
+
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+
+
+

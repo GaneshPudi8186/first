@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: cyan;
+    border-style: double;
+    border-width: 3px;
+    border-radius: 20px;
+    text-align: left;
+}
+#cid
+{
+ color: brown;
+}
+.pro
+{
+    color:brown;
+    align-items: right;
+    font-style: italic;
+    padding-left: 50px;
+}
+.pro1{
+    color: darksalmon;
+    
+}
+.im
+{
+text-align: right;
+
+}

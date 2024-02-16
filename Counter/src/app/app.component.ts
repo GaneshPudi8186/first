@@ -7,20 +7,30 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Counter';
-  Count=0;
-  Inc()
+  count = 0;
+ isEvenOdd=true
+ isZero=true;
+  incr()
   {
-    
-    this.Count++;
+      this.count++;
+      this.isEvenOdd = this.count % 2 == 0;
   }
-  Dec()
+  decr()
   {
-    
-    this.Count--;
+    this.count--;
+    if(this.count==0)
+    {
+      this.isEvenOdd = this.count % 2 == 0;
+    }
+    else
+    {
+      this.isEvenOdd = this.count % 2 == 0;
+    }  
+ 
   }
-  Reset()
+  reset()
   {
-    
-    this.Count=0;
+    this.isEvenOdd=false;
+    this.count = 0;
   }
 }

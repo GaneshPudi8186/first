@@ -1,0 +1,14 @@
+<div>
+  <app-header [p]="Count" [c]="color" (a)="fun($event)" #gana></app-header>
+  <P>Welcome to parent class</P>
+  <button (click)="Incre()">+</button>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button (click)="Decre()">-</button>&nbsp;
+  <button (click)="Reset()">Reset</button>
+  <button value="blue" (click)="g($event)">blue</button>
+  <input type="color"  />
+<h1>{{s}}</h1>
+<!--<h1> ganesh {{a}}</h1>-->
+<p>{{gana.val}}</p>
+<p>{{gana.name}}</p>
+
+</div>
